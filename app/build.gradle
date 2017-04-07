@@ -26,4 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.0'
     testCompile 'junit:junit:4.12'
+    compile rootProject.ext.rxJava
+    compile rootProject.ext.rxAndroid
+    compile "tony-common:tony-common-utils:1.0.2"
 }
