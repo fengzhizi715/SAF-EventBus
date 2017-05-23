@@ -38,7 +38,7 @@ public class RxEventBus {
             subjectMapper.put(tag, subjectList);
         }
 
-        Subject<T> subject = PublishSubject.create();
+        Subject<T> subject = PublishSubject.<T>create().toSerialized();
         subjectList.add(subject);
 
         return subject;
